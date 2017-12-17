@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+
+<link href="./build/css/custom.min.css" rel="stylesheet">
+
+
+
+<script>
+var importDoc = document.currentScript.ownerDocument;
+var style = importDoc.querySelectorAll('link[rel=stylesheet]');
+
+var len = style.length;
+for(i=0; i<len; ++i)
+	{
+		document.head.appendChild(style[i]);
+	}
+
+/* document.head.appendChild(style); */
+</script>
